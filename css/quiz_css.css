@@ -1,0 +1,22 @@
+#pageContent{
+	margin: 0px;
+	padding: 0px;
+	max-width: 500px;
+	align-self: center;
+	background: red;
+	display: flex;
+  	align-items: flex-start;
+}
+
+#selectOption{
+	outline: none;
+	width: 200px;
+	display: flex;
+	background: transparent;
+}
+
+#quizCotent{
+	flex: 1;
+	align-self: center;
+	background: white;
+}
