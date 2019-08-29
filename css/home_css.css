@@ -17,19 +17,25 @@
 }
 
 .hero-text button {
-  border: 2px solid white;
+  border: 2px solid transparent;
   border-radius: 5px;
   background-color: transparent;
   color: white;
   padding: 14px 28px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   width: 100px;
   outline: 0;
 }
 
 .hero-text button:hover {
-  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#activeNav{
+  border: 2px solid #ddd;
+  background-color: #ddd;
   color: black;
 }
 
