@@ -1,0 +1,10 @@
+body {font-family: "Lato", sans-serif;}
+
+
+/* Style the tab content */
+.tabcontent {
+  background: #ddd;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
