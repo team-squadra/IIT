@@ -2,7 +2,7 @@ document.getElementById("qDiv1").style.display = "block";
 document.getElementById("qDiv2").style.display = "none";
 document.getElementById("qDiv3").style.display = "none";
 document.getElementById("qDiv4").style.display = "none";
-document.getElementById("qDiv5").style.display = "none";
+document.getElementById("qDiv5").style.display = "";
 
 var answers=[];
 
@@ -67,6 +67,23 @@ function nextQ5() {
 		document.getElementById("qDiv3").style.display = "none";
 		document.getElementById("qDiv4").style.display = "none";
 		document.getElementById("qDiv5").style.display = "block";
+
+	}
+}
+
+function finalizing() {
+	var q5Answer = document.getElementById("q4A").value;
+
+	if (q5Answer == "null") {
+		alert("Please select your choice !");
+	}else{
+		answers[4] = q5Answer;
+
+		document.getElementById("qDiv1").style.display = "none";
+		document.getElementById("qDiv2").style.display = "none";
+		document.getElementById("qDiv3").style.display = "none";
+		document.getElementById("qDiv4").style.display = "none";
+		document.getElementById("qDiv5").style.display = "none";
 
 		alert(answers);
 	}
