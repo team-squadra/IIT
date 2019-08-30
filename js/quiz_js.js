@@ -5,7 +5,6 @@ document.getElementById("qDiv4").style.display = "none";
 document.getElementById("qDiv5").style.display = "none";
 document.getElementById("final").style.display = "none";
 
-
 var answers=[];
 
 function nextQ2() {
@@ -125,6 +124,9 @@ function finalizing() {
 
 		
 	}
-
 	
+}
+
+function refresh() {
+	location.reload();
 }
