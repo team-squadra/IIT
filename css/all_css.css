@@ -24,6 +24,7 @@ body, html {
 .main-nav
 {
 	 list-style: none;
+   position: relative;
 }
 
 .main-nav li
