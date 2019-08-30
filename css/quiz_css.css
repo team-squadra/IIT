@@ -2,21 +2,89 @@
 	margin: 0px;
 	padding: 0px;
 	max-width: 500px;
-	align-self: center;
-	background: red;
-	display: flex;
-  	align-items: flex-start;
 }
 
-#selectOption{
+#q1A{
 	outline: none;
-	width: 200px;
-	display: flex;
-	background: transparent;
+	width: 250px;
+	padding: 10px 20px;
+	font-family: sans-serif;
+	color: DimGray;
+}
+#q2A{
+	outline: none;
+	width: 250px;
+	padding: 10px 20px;
+	font-family: sans-serif;
+	color: DimGray;
+}
+#q3A{
+	outline: none;
+	width: 250px;
+	padding: 10px 20px;
+	font-family: sans-serif;
+	color: DimGray;
+}
+#q4A{
+	outline: none;
+	width: 250px;
+	padding: 10px 20px;
+	font-family: sans-serif;
+	color: DimGray;
+}
+#q5A{
+	outline: none;
+	width: 250px;
+	padding: 10px 20px;
+	font-family: sans-serif;
+	color: DimGray;
 }
 
-#quizCotent{
-	flex: 1;
-	align-self: center;
-	background: white;
+
+.q{
+	text-align: left;
+	font-size: 20px;
+	color: DimGray;
+	font-family: sans-serif;
+
 }
+
+.qId{
+	text-align: left;
+	font-size: 25px;
+	color: DarkGoldenrod;
+}
+
+.qDiv{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border: 2px solid DimGray;
+	border-radius: 5px;
+	padding: 20px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+}
+
+
+.nextBtn{
+	background-color: MediumSeaGreen; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  outline: none;
+}
+
+.nextBtn:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+

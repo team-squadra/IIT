@@ -1,133 +1,121 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="stylesheet" href="css/all_css.css">
-	<link rel="stylesheet" href="css/quiz_css.css">
+  <link rel="stylesheet" href="css/all_css.css">
+  <link rel="stylesheet" href="css/quiz_css.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">I am Hasitha Nanayakkara</h1>
-    <p>And I'm a Programmer</p>
-    <hr>
-    <ul class="main-nav">
-    	<li><a href="home.html">HOME</a></li>
-    	<li><a href="">CV</a></li>
-    	<li><a href="">SVG</a></li>
-    	<li class="active"><a href="quiz.html">QUIZ</a></li>
-    </ul>
-    <hr>
+  <div class="hero-image">
+    <div class="hero-text">
+      <img src="images/logoWhite.png" style="width: 100px;height: 100px;">
+      <h1 style="font-size:50px">I am Hasitha Nanayakkara</h1>
+      <p>And I'm a Programmer</p>
+      <hr>
+      <ul class="main-nav">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="">CV</a></li>
+        <li><a href="">SVG</a></li>
+        <li class="active"><a href="quiz.html">QUIZ</a></li>
+      </ul>
+      <hr>
+    </div>
   </div>
-</div>
-
-<div id="pageContent" >
 
 
-<div id="quizCotent" >
-  
-  <table>
-    <tr>
-      <td><label class="q">What is my favourite colour?</label></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><select class="w3-select" id="selectOption" name="option">
-        <option value="" disabled selected hidden="">Choose your option</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-        <option value="3">Option 4</option>
-      </select></td>
-    </tr>
-    <tr>
-      <td><label class="q">What is my favourite field?</label></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><select class="w3-select" id="selectOption" name="option">
-        <option value="" disabled selected hidden="">Choose your option</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-        <option value="3">Option 4</option>
-      </select></td>
-    </tr>
-    <tr>
-      <td><label class="q">What perfume i like most?</label></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><select class="w3-select" id="selectOption" name="option">
-        <option value="" disabled selected hidden="">Choose your option</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-        <option value="3">Option 4</option>
-      </select></td>
-    </tr>
-    <tr>
-      <td><label class="q">What is my favourite sport?</label></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><select class="w3-select" id="selectOption" name="option">
-        <option value="" disabled selected hidden="">Choose your option</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-        <option value="3">Option 4</option>
-      </select></td>
-    </tr>
-    <tr>
-      <td><label class="q">What is my favourite movie?</label></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><select class="w3-select" id="selectOption" name="option">
-        <option value="" disabled selected hidden="">Choose your option</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-        <option value="3">Option 4</option>
-      </select></td>
-    </tr>
-  </table>
 
+  <center>
 
-  
+    <div id="pageContent">
 
+      <div class="qDiv" id="qDiv1">
+        <p class="qId">Question 1 of 5:</p>
+        <p class="q">&#10063; What is my favourite colour ?</p>
+          <select class="w3-select" name="option" id="q1A">
+            <option value="null" disabled selected hidden="">Your Answer</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select><br>
+        <button class="nextBtn" style="margin-left: 0px;" onclick="nextQ2()">Next &#10095;</button>
+      </div>
 
-</div>
+      <div class="qDiv" id="qDiv2">
+        <p class="qId">Question 2 of 5:</p>
+        <p class="q">&#10063; What is my favourite field ?</p>
+          <select class="w3-select" name="option" id="q2A">
+            <option value="null" disabled selected hidden="">Your Answer</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select><br>
+        <button class="nextBtn" style="margin-left: 0px;" onclick="nextQ3()">Next &#10095;</button>
+      </div>
+
+      <div class="qDiv" id="qDiv3">
+        <p class="qId">Question 3 of 5:</p>
+        <p class="q">&#10063; What perfume i like most ?</p>
+          <select class="w3-select" name="option" id="q3A">
+            <option value="null" disabled selected hidden="">Your Answer</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select><br>
+        <button class="nextBtn" style="margin-left: 0px;" onclick="nextQ4()">Next &#10095;</button>
+      </div>
+
+      <div class="qDiv" id="qDiv4">
+        <p class="qId">Question 4 of 5:</p>
+        <p class="q">&#10063; What is my favourite sport ?</p>
+          <select class="w3-select" name="option" id="q4A">
+            <option value="null" disabled selected hidden="">Your Answer</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select><br>
+        <button class="nextBtn" style="margin-left: 0px;" onclick="nextQ5()">Next &#10095;</button>
+      </div>
+
+      <div class="qDiv" id="qDiv5">
+        <p class="qId">Question 5 of 5:</p>
+        <p class="q">&#10063; What is my favourite movie ?</p>
+          <select class="w3-select" name="option" id="q5A">
+            <option value="null" disabled selected hidden="">Your Answer</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select><br>
+        <button class="nextBtn" style="margin-left: 0px;" onclick="checking()">Next &#10095;</button>
+      </div>
+
+    </div>
+  </center>
 
 
 
 
-
-
-
-
-
-
-<!--<td>What is my favourite colour?</td>
+  <!--<td>What is my favourite colour?</td>
     <td>What is my favourite field?</td>
     <td>What perfume i like most?</td>
     <td>What is my favourite sport?</td>
     <td>What is my favourite movie?</td>-->
-</div>
 
 
-<footer>
-  <p>Hasitha.98@gmail.com</p>
-</footer>
+  <footer>
+    <p>Hasitha.98@gmail.com</p>
+  </footer>
 
 </body>
+
 </html>
+
+<script src="js/quiz_js.js"></script>
