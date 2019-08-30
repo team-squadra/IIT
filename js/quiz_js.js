@@ -2,7 +2,9 @@ document.getElementById("qDiv1").style.display = "block";
 document.getElementById("qDiv2").style.display = "none";
 document.getElementById("qDiv3").style.display = "none";
 document.getElementById("qDiv4").style.display = "none";
-document.getElementById("qDiv5").style.display = "";
+document.getElementById("qDiv5").style.display = "none";
+document.getElementById("final").style.display = "none";
+
 
 var answers=[];
 
@@ -20,6 +22,7 @@ function nextQ2() {
 		document.getElementById("qDiv3").style.display = "none";
 		document.getElementById("qDiv4").style.display = "none";
 		document.getElementById("qDiv5").style.display = "none";
+		document.getElementById("final").style.display = "none";
 	}
 }
 
@@ -37,6 +40,7 @@ function nextQ3() {
 		document.getElementById("qDiv3").style.display = "block";
 		document.getElementById("qDiv4").style.display = "none";
 		document.getElementById("qDiv5").style.display = "none";
+		document.getElementById("final").style.display = "none";
 	}
 }
 function nextQ4() {
@@ -52,6 +56,7 @@ function nextQ4() {
 		document.getElementById("qDiv3").style.display = "none";
 		document.getElementById("qDiv4").style.display = "block";
 		document.getElementById("qDiv5").style.display = "none";
+		document.getElementById("final").style.display = "none";
 	}
 }
 function nextQ5() {
@@ -67,24 +72,59 @@ function nextQ5() {
 		document.getElementById("qDiv3").style.display = "none";
 		document.getElementById("qDiv4").style.display = "none";
 		document.getElementById("qDiv5").style.display = "block";
+		document.getElementById("final").style.display = "none";
 
 	}
 }
 
 function finalizing() {
-	var q5Answer = document.getElementById("q4A").value;
+	var q5Answer = document.getElementById("q5A").value;
 
 	if (q5Answer == "null") {
 		alert("Please select your choice !");
 	}else{
 		answers[4] = q5Answer;
+		var x=0;
 
+		if (answers[0] == 2) {
+			x=x+2;
+		}else{
+
+		}
+
+		if (answers[1] == 4) {
+			x=x+2;
+		}else{
+
+		}
+
+		if (answers[2] == 4) {
+			x=x+2;
+		}else{
+
+		}
+
+		if (answers[3] == 2) {
+			x=x+2;
+		}else{
+
+		}
+
+		if (answers[4] == 3) {
+			x=x+2;
+		}else{
+
+		}
+		document.getElementById("marks").innerHTML = ""+x+"/10";
 		document.getElementById("qDiv1").style.display = "none";
 		document.getElementById("qDiv2").style.display = "none";
 		document.getElementById("qDiv3").style.display = "none";
 		document.getElementById("qDiv4").style.display = "none";
 		document.getElementById("qDiv5").style.display = "none";
+		document.getElementById("final").style.display = "block";
 
-		alert(answers);
+		
 	}
+
+	
 }

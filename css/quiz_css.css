@@ -58,7 +58,7 @@
 .qDiv{
 	margin-top: 100px;
 	margin-bottom: 100px;
-	border: 2px solid DimGray;
+	border: 2px solid transparent;
 	border-radius: 5px;
 	padding: 20px;
 	-webkit-transition-duration: 0.4s; /* Safari */
@@ -90,7 +90,7 @@
 
 
 #marks{
-	padding: 10px 20px;
+	padding: 40px 20px;
 	border-radius: 50%;
 	width: 200px;
 	height: 200px;
