@@ -10,35 +10,18 @@
 </head>
 
 <body>
-<div id="x1" style="display: none;">
-  <center>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-    <h1>Hukanna kari wesigige putha salli gewapan huthooooo!!!!!!!!!!</h1>
-  </center>
-  
-</div>
-<div id="x2" >
-  <div class="hero-image">
+
+<div class="hero-image">
   <div class="hero-text">
     <img src="images/logoWhite.png" style="width: 100px;height: 100px;">
     <h1 style="font-size:50px">I am Hasitha Nanayakkara</h1>
     <p>And I'm a Programmer</p>
     <hr>
     <ul class="main-nav">
-      <li class="active"><a href="home.html">HOME</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="Svg.html">SVG</a></li>
-      <li><a href="quiz.html">QUIZ</a></li>
+    	<li class="active"><a href="home.html">HOME</a></li>
+    	<li><a href="cv.html">CV</a></li>
+    	<li><a href="Svg.html">SVG</a></li>
+    	<li><a href="quiz.html">QUIZ</a></li>
     </ul>
     <hr>
   </div>
@@ -50,41 +33,6 @@
 <footer>
   <p>Hasitha.98@gmail.com</p>
 </footer>
-</div>
-
 
 </body>
 </html>
-
-
-<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyD19ndH02Obg8kNftMiRk7EL5euhwiDq3Q",
-            authDomain: "smarthome-ad51f.firebaseapp.com",
-            databaseURL: "https://smarthome-ad51f.firebaseio.com",
-            projectId: "smarthome-ad51f",
-            storageBucket: "smarthome-ad51f.appspot.com",
-            messagingSenderId: "21004874174"
-        };
-        firebase.initializeApp(config);
-    </script>
-
-    <script type="text/javascript">
-      
-      //get tank_capacity
-        const tank_capacity = firebase.database().ref().child('test');
-        tank_capacity.on('value', snap => {
-            var tank_capacity = JSON.stringify(snap.val());
-            if (tank_capacity == 1) {
-              document.getElementById("x1").style.display = "block";
-              document.getElementById("x2").style.display = "none";
-            }else{
-              document.getElementById("x1").style.display = "none";
-              document.getElementById("x2").style.display = "block";
-            }
-        });
-
-
-    </script>
