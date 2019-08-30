@@ -4,17 +4,17 @@ document.getElementById("qDiv3").style.display = "none";
 document.getElementById("qDiv4").style.display = "none";
 document.getElementById("qDiv5").style.display = "none";
 
-var Answers;
+var answers=[];
 
 function nextQ2() {
 
 	var q1Answer = document.getElementById("q1A").value;
-alert(q1Answer);
+
 	if (q1Answer == "null") {
-		alert(q1Answer);
-		/*alert("Please select your choice !");*/
+		alert("Please select your choice !");
 	}else{
-		Answers[0] = ""+q1Answer+"";
+		answers[0] = q1Answer;
+
 		document.getElementById("qDiv1").style.display = "none";
 		document.getElementById("qDiv2").style.display = "block";
 		document.getElementById("qDiv3").style.display = "none";
@@ -30,7 +30,8 @@ function nextQ3() {
 	if (q2Answer == "null") {
 		alert("Please select your choice !");
 	}else{
-		Answers[1] = ""+q2Answer+"";
+		answers[1] = q2Answer;
+
 		document.getElementById("qDiv1").style.display = "none";
 		document.getElementById("qDiv2").style.display = "none";
 		document.getElementById("qDiv3").style.display = "block";
@@ -44,7 +45,8 @@ function nextQ4() {
 	if (q3Answer == "null") {
 		alert("Please select your choice !");
 	}else{
-		Answers[2] = q3Answer;
+		answers[2] = q3Answer;
+
 		document.getElementById("qDiv1").style.display = "none";
 		document.getElementById("qDiv2").style.display = "none";
 		document.getElementById("qDiv3").style.display = "none";
@@ -58,13 +60,14 @@ function nextQ5() {
 	if (q4Answer == "null") {
 		alert("Please select your choice !");
 	}else{
-		Answers[3] = q4Answer;
+		answers[3] = q4Answer;
+
 		document.getElementById("qDiv1").style.display = "none";
 		document.getElementById("qDiv2").style.display = "none";
 		document.getElementById("qDiv3").style.display = "none";
 		document.getElementById("qDiv4").style.display = "none";
 		document.getElementById("qDiv5").style.display = "block";
 
-		alert(Answers);
+		alert(answers);
 	}
 }
