@@ -1,0 +1,67 @@
+body, h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px
+}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url(../images/img.jpg);
+  min-height: 100%;
+}
+#div1{
+	background-color: red;
+	color: white;
+	width: 50%;
+	height: 100%;
+	float: left;
+	border-top-left-radius: 5px;
+}
+#div2{
+	background-color: blue;
+	color: red;
+	width: 50%;
+	height: 100%;
+	float: left;
+	border-left: 30px;
+	border-color: brown;
+}
+
+#div3{
+	background-color: yellow;
+	width: 100%;
+	height: 30%;
+}
+
+#div4{
+	background-color: pink;
+	width: 100%;
+	height: 35%;
+}
+
+#div5{
+	background-color: green;
+	width: 100%;
+	height: 35%;
+}
+#img2{
+	max-width: 500px;
+	max-height: 500px;
+	align-items: center;
+	align-self: center;
+	padding-top: 10px;
+}
+#discryption{
+	font-family: 'Acme';font-size: 22px;
+	text-align: center;
+
+}
+#hedding{
+	font-family: 'Alfa Slab One';font-size: 20px;
+	text-align: center;
+}
